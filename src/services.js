@@ -79,9 +79,9 @@ class CustomersService {
                 email: faker.internet.email(),
                 address: {
                     street: faker.address.streetName(),
+                    number: `${faker.random.number()}`,
                     city: faker.address.city(),
                     state: faker.address.stateAbbr(),
-                    number: `${faker.random.number()}`,
                     zipCode: faker.address.zipCodeValid()
                 }
             })
